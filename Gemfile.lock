@@ -1,0 +1,12 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    fast-stemmer (1.0.2)
+    rb-libsvm (1.2.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  fast-stemmer
+  rb-libsvm
