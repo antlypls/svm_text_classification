@@ -5,7 +5,7 @@ Bundler.require(:default)
 require_relative 'string_extensions'
 require_relative 'words_bag'
 
-DATA = ENV['DATA']
+DATA = ENV['DATA'] || 'data/movie_reviews'
 
 class Pattern < Struct.new(:features, :label)
 end
