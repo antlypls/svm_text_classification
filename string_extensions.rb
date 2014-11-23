@@ -16,7 +16,8 @@ class String
   def to_utf8
     encode('UTF-8', invalid: :replace, undef: :replace, replace: '')
       .force_encoding('UTF-8')
-    rescue ''
+  rescue
+    ''
   end
 
   # split by dashes and spaces

@@ -81,7 +81,6 @@ puts '>>>>>>>>>>>>> prepare data 1'
 examples = training_set.map { |p| Libsvm::Node.features(p.features) }
 labels = training_set.map { |p| p.label == :neg ? 0 : 1 }
 
-
 puts '>>>>>>>>>>>>> prepare data 2'
 
 problem = Libsvm::Problem.new

@@ -22,7 +22,7 @@ class WordsBag
   private
 
   def add_text(text)
-    text.fragmentize.select(&:valid_word?).each { |word| add_word(word)}
+    text.fragmentize.select(&:valid_word?).each { |word| add_word(word) }
   end
 
   def add_word(word)
